@@ -9,13 +9,15 @@ namespace Lab4bai4._1
     internal class SavingAccount: Account
     {
         public double rate;
+        public SavingAccount() { }
         public SavingAccount(int initialize, double rate): base(initialize)
         {
             this.rate = rate;
         }
-        public double GetInterest()
+        public void GetInterest()
         {
-            return Initialize * rate;
-        }
+            
+            Console.WriteLine("So tien lai nhan duoc hang thang: "+ initialize * rate);
+        }        
     }
 }
